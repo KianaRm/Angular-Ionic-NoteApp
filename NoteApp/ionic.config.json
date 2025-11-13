@@ -1,0 +1,7 @@
+{
+  "name": "ionicVize",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

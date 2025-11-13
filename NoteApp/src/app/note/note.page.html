@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="medium" (click)="close()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="updateNote()" [strong]="true">
+        <ion-icon name="checkmark-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"> 
+  <div *ngIf="note">
+    <ion-textarea
+    [clearOnEdit]="true" [(ngModel)]="note.title">
+    </ion-textarea>
+    <ion-textarea id="tx2"
+    [clearOnEdit]="true" [(ngModel)]="note.text">
+    </ion-textarea>
+  </div>
+
+
+
+  <div class="Gdiv">
+    <div class="ChDiv">
+      <ion-select aria-label="Category" interface="popover" placeholder="Select Category" [(ngModel)]="note.category" >
+        <ion-select-option value="Work">Work</ion-select-option>
+        <ion-select-option value="Study">Study</ion-select-option>
+        <ion-select-option value="Home">Home</ion-select-option>
+        <ion-select-option value="Sport">Sport</ion-select-option>
+        <ion-select-option value="Shopping">Shopping</ion-select-option>
+        <ion-select-option value="Other">Other</ion-select-option>
+      </ion-select>
+    </div>
+    <div class="ChDiv">
+      <ion-checkbox [(ngModel)]="note.isPinned">Pin</ion-checkbox>
+    </div>
+  </div> 
+
+  
+  <ion-button class="btn" (click)="deleteNote()" color="danger" expand="full" >
+    <ion-icon slot="start" name="trash"></ion-icon>
+    Delete
+  </ion-button>
+</ion-content>

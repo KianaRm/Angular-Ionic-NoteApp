@@ -1,0 +1,50 @@
+ion-content {
+    --background:url("../../assets/LoginBackGround.jpg");
+    font-family: "Chewy";
+}
+
+ion-item{
+    --background:#6D7961;
+    color: #fff6e5;
+    font-size: large;
+}
+ion-button{
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+ion-toolbar{
+    --background:#6D7961;
+    color: #FFF6E5;
+}
+
+ion-title{
+    font-size: 25px;
+}
+
+.btn1{
+    padding-top: 20px;
+    --background:#fff6e5; 
+    color: #6D7961;
+}
+
+
+.btn2{
+    padding-bottom: 15px;
+    padding-top: 5px;
+    color: #fff6e5;
+}
+
+.frm{
+    padding-top: 20%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.input-group{
+    border-radius: 10px;
+    overflow:hidden;
+    margin-bottom: 15px;
+    background-color: #6D7961;
+}
