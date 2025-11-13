@@ -8,6 +8,15 @@ ion-content {
     padding: 0;
 }
 
+form.ion-padding {
+    width: 90%;
+    max-width: 400px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 ion-item{
     --background: #6D7961;
     color: #fff6e5;
@@ -57,3 +66,4 @@ ion-title{
     background-color: #6d7961;
 
 }
+
