@@ -1,6 +1,11 @@
 ion-content {
     --background:url("../../assets/LoginBackGround.jpg");
     font-family: "Chewy";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
 }
 
 ion-item{
@@ -50,4 +55,5 @@ ion-title{
     overflow:hidden;
     margin-bottom: 15px;
     background-color: #6d7961;
+
 }
